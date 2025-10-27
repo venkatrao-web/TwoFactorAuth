@@ -1,0 +1,21 @@
+create database votingapp;
+use votingapp;
+
+create table register(username varchar(30) primary key,
+password varchar(30),
+contact varchar(12),
+email varchar(30),
+address varchar(40),
+thumb varchar(30),
+aadhar varchar(30));
+
+create table addparty(candidatename varchar(30),
+partyname varchar(50),
+areaname varchar(100),
+image varchar(100));
+
+create table votes(username varchar(50), candidatename varchar(50), partyname varchar(50), vote_date varchar(30));
+
+
+
+
